@@ -1,7 +1,7 @@
 // src/components/certificate/CertificatePage.jsx
 import { useState } from "react";
 import CertificateCard from "./CertificateCard";  // Importing the CertificateCard component
-import "./certificate.scss";  // Importing the SCSS file for styles
+import "./Certificate.scss";  // Importing the SCSS file for styles
 
 const CertificatePage = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
