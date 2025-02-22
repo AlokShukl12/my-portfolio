@@ -1,4 +1,4 @@
-import { animate,motion,useInView } from "framer-motion";
+import { motion,useInView } from "framer-motion";
 import "./contact.scss";
 import { useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
@@ -35,10 +35,10 @@ const Contact = () =>{
           .sendForm('service_f9fjyt9', 'template_oe6b6av', formRef.current, {
             publicKey: '-mRbtGiC7HmTHKmJz',})
           .then(
-            (result) => {
+            () => {
               setSuccess(true)
             },
-            (error) => {
+            () => {
              setError(true)
             },
           );

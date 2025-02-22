@@ -1,5 +1,6 @@
 import "./portfolio.scss";
 import { motion,useScroll,useSpring, useTransform} from "framer-motion";
+import PropTypes from 'prop-types';
 import { useRef} from "react";
 
 const items = [
@@ -84,4 +85,15 @@ const Portfolio = () =>{
        </div>
     );
 };
+
+Single.propTypes = {
+    item: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        title: PropTypes.string.isRequired,
+        img: PropTypes.string.isRequired,
+        desc: PropTypes.string.isRequired,
+        link: PropTypes.string.isRequired,
+    }).isRequired,
+};
+
 export default Portfolio;

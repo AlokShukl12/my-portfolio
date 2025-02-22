@@ -1,5 +1,6 @@
 // src/components/skills/SkillCard.jsx
 import { motion } from "framer-motion"; // Import Framer Motion for animation
+import PropTypes from 'prop-types'; // Import PropTypes for props validation
 
 const SkillCard = ({ skill }) => {
   return (
@@ -28,5 +29,13 @@ const SkillCard = ({ skill }) => {
     </motion.div>
   );
 };
+SkillCard.propTypes = {
+  skill: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    level: PropTypes.string.isRequired,
+    progress: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 export default SkillCard;
+

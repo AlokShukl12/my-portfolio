@@ -2,7 +2,7 @@
 import SkillCard from "./SkillCard";
 import "./skills.scss";  // Import the SCSS for styles
 
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 // Sample skills data with level percentages
 const skills = [

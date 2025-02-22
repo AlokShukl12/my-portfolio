@@ -1,4 +1,5 @@
 import {motion} from "framer-motion";
+import PropTypes from 'prop-types';
 const ToggleleButton= ({setOpen}) =>{
     return( <button onClick={() => setOpen((prev) => !prev)}>
        <svg width="23" height="23" viewBox="0 0 23 23">
@@ -19,4 +20,9 @@ const ToggleleButton= ({setOpen}) =>{
     </button>
     );
 };
+
+ToggleleButton.propTypes = {
+    setOpen: PropTypes.func.isRequired,
+};
+
 export default ToggleleButton;

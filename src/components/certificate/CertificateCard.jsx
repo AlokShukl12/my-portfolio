@@ -1,5 +1,6 @@
 // src/components/certificate/CertificateCard.jsx
 import { motion } from "framer-motion";  // If you're using animations like framer-motion
+import PropTypes from 'prop-types';
 
 const CertificateCard = ({ certificate, onClick }) => {
   return (
@@ -14,5 +15,13 @@ const CertificateCard = ({ certificate, onClick }) => {
     </motion.div>
   );
 };
+CertificateCard.propTypes = {
+  certificate: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default CertificateCard;
+
