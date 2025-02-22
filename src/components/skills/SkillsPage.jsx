@@ -1,6 +1,6 @@
 // src/components/skills/SkillsPage.jsx
 import SkillCard from "./SkillCard";
-import "./skills.scss";  // Import the SCSS for styles
+import "./Skills.scss";  // Import the SCSS for styles
 
 import { motion } from "framer-motion";
 
